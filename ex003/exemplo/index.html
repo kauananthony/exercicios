@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste do name</title>
+</head>
+<body>
+    <h1>Digite um número</h1>
+    <div id = "msg">
+        Digite um número:<input type="number" name="txtn" class="txtnum">
+        <input type="button" value="Verificar" onclick="verificar()">
+    </div>
+    <script>
+        function verificar() {
+            var msg = window.document.querySelector('div#msg')
+            var num = window.document.querySelector('input.txtnum')
+            msg.innerHTML = `${Number(num.value)}`
+        }
+    </script>
+</body>
+</html>
